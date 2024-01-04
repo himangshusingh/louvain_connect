@@ -5,7 +5,10 @@ To run the project navigate to **_louv>src_**
 
 ```
 cd src
+```
 
+
+```
 python ./main.py
 ```
 
