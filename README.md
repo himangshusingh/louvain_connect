@@ -16,4 +16,4 @@ python ./main.py
 Initially the output is fed in the main.py file but ideally the output from louvain.py should be provided to main.py
 
 
-This implementation for now uses a karate_club_graph() for its dataset
+This implementation for now uses a [karate_club_graph()](https://networkx.org/documentation/stable/reference/generated/networkx.generators.social.karate_club_graph.html) for its dataset
