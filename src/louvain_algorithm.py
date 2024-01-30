@@ -77,3 +77,4 @@ converted_communities = [set(community) for community in communities]
 # Print the identified communities
 for i, community in enumerate(converted_communities):
     print(f"Community {i + 1}: {community}")
+#i have added new features
