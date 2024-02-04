@@ -4,8 +4,6 @@ from louvain_algorithm import louvain
 from visualize import visualize_communities
 import networkx as nx
 
-app = Flask(__name__)
-
 # Get the current script's directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
@@ -14,6 +12,9 @@ template_folder = os.path.join(current_dir, 'template')
 
 # Initialize the Flask app with the template folder
 app = Flask(__name__, template_folder=template_folder)
+
+
+
 
 @app.route('/')
 def index():
@@ -38,6 +39,12 @@ def detect_communities():
         return render_template('detect_communities.html', output_file=output_file)
     except Exception as e:
         return f"Error occurred: {str(e)}"
+
+@app.route('/view_communities', methods=['GET', 'POST'])
+def view_communities():
+    # Replace this section with any necessary logic
+    return render_template('view_communities.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
